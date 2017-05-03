@@ -4,6 +4,7 @@ $("document").ready(function() {
     client_id: '8ce0fdd82bd55bad9d7d68acb86d9fda',
   });
 /////////////////////////////////////////////////
+var next = document.getElementsByClassName("next")[0];
 var play = document.getElementsByClassName("play")[0];
 var pause = document.getElementsByClassName("pause")[0];
 var songIdEntryButton = document.getElementById("songIdEntryButton");
@@ -14,8 +15,43 @@ var description = document.getElementsByClassName("description")[0];
 var genre = document.getElementsByClassName("genre")[0];
 var img = document.getElementsByClassName("img")[0];
 /////////////////////////////////////////////////
+var myJukeBox = new Jukebox();
+/////////////////////////////////////////////////
+function Jukebox() {
+  this.songs = [];
+  this.findAndPlaySong = findAndPlaySong
+  this.pauseSong = pauseSong
+  this.nextSong = nextSong
+  currentSong = 0;
+}
+function pauseSong() {
+  playSong.pause();
+}
+function nextSong() {
+  playSong.track.trackCounter
+}
+function nextSong() {
+  currentSong += 1;
+  this.playSong();
+}
+// function Song(name, fileName, songLength) {
+//   this.name = name;
+//   this.fileName = fileName;
+//   this.songLength = songLength
+// }
+function playSong() {
+  findAndPlaySong();
+}
+/////////////////////////////////////////////////
+trackCounter = 0
+trackCounter += 1
+/////////////////////////////////////////////////
 play.addEventListener("click", function(){
-  myPlayer.play();
+  playSong.play();
+})
+/////////////////////////////////////////////////
+next.addEventListener("click", function(){
+  nextSong();
 })
 /////////////////////////////////////////////////
 window.addEventListener("keypress", function(event){
@@ -26,7 +62,7 @@ window.addEventListener("keypress", function(event){
 })
 /////////////////////////////////////////////////
 pause.addEventListener("click", function(){
-  myPlayer.pause();
+  playSong.pause();
 })
 /////////////////////////////////////////////////
 // songIdEntryButton.addEventListener("click", function(){
@@ -53,11 +89,15 @@ function findAndPlaySong() {
 /////////////////////////////////////////////////
   function SCStream(id) {
     SC.stream('/tracks/' + id).then(function(player){
-    myPlayer = player
-    myPlayer.play()
+    playSong = player
+    playSong.play()
   });
    }
 /////////////////////////////////////////////////
+
+
+
+
 
 
 
