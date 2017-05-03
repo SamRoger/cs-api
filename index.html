@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SoundCloud API</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+<video playsinline autoplay muted loop poster id="background-video" class="background-video">
+    <source src="assets/video/water.mp4" type="video/webm">
+</video>
+
+<div class="player-container">
+	<div class="box">
+<div class="control-container">
+ 	<div class="rewind"> << </div>
+	<div class="pause"> II </div>
+	<div id="play" class="play"> I> </div>
+	<div class="next"> >I </div>
+	<div onmousedown="mouseDown()" onmouseup="mouseUp()" class="ff"> >> </div>
+</div>
+	<audio src="" class="audio">
+	</audio>
+	<input type="text" name="song-id" id="songId"></input>
+	<button id="songIDEntryButton" type="button">Play Song</button>
+	<div class="tile"></div>
+	<div class="genre"></div>
+	<div class="description"></div>
+		
+	</div>
+</div>	
+
+
+<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+<script type="text/javascript" src="assets/js/additional.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+
+
+</body>
+</html>

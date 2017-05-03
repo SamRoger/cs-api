@@ -1,0 +1,113 @@
+body {
+	background-color: teal;
+}
+
+.box {
+	box-shadow: 1px 1px 1px 1px black;
+	border-radius: 20px;
+	z-index: -10;
+	position: absolute;
+	left: 500px;
+	width: 480px;
+	height: 200px;
+	background-color: rgba(0,128,128,0.5);
+}
+
+.control-container {
+	margin: 0 auto
+}
+
+.player-container {
+	/*display: flex;
+	justify-content: space-around;*/
+	margin-top: 100px;
+	text-align: center;
+}
+
+.play:active,.pause:active,.rewind:active,.next:active,.ff:active{
+	color: #E74C3C;
+}
+
+.rewind:hover,.play:hover,.pause:hover,.next:hover,.ff:hover {
+	color: #E74C3C;
+	text-shadow: 1px 1px 2px black;
+	cursor: pointer;
+}
+
+.rewind,.play,.pause,.next,.ff {
+	margin: 0px 10px 10px 10px;
+/*	padding: 20px;
+*/	text-shadow: 1px 1px 2px #E74C3C;
+	font-size: 77px;
+	display: inline-flex;
+	font-family: 'Rubik', sans-serif;
+
+}
+
+.buttonDecoAdd {
+	color: #E74C3C;
+	text-shadow: 2px 2px 4px black;
+	text-decoration: underline;
+	text-decoration-color: black;
+}
+
+.display {
+	margin-top: 15px;
+	font-family: 'Passion One', cursive;
+	font-size: 50px;
+	text-shadow: 1px 1px 2px black;
+	color: #E74C3C;
+}
+
+.display1 {
+	font-size: 25px;
+	text-shadow: 1px 1px 2px black;
+	color: #ffffff;
+	font-family: 'Passion One', cursive;
+	position: absolute;
+	left: 205px;
+}
+
+.background-video {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ z-index: -100;
+ -ms-transform: translateX(-50%) translateY(-50%);
+ -moz-transform: translateX(-50%) translateY(-50%);
+ -webkit-transform: translateX(-50%) translateY(-50%);
+ transform: translateX(-50%) translateY(-50%);
+ background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
