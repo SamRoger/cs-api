@@ -11,9 +11,9 @@
 <body>
 
 
-<video playsinline autoplay muted loop poster id="background-video" class="background-video">
+<!-- <video playsinline autoplay muted loop poster id="background-video" class="background-video">
     <source src="assets/video/water.mp4" type="video/webm">
-</video>
+</video> -->
 
 <div class="player-container">
 	<div class="box">
@@ -26,18 +26,19 @@
 </div>
 	<audio src="" class="audio">
 	</audio>
-	<input type="text" name="song-id" id="songId"></input>
-	<button id="songIDEntryButton" type="button">Play Song</button>
-	<div class="tile"></div>
+	<input autofocus class="songId" type="text" name="song-id" id="songId"></input>
+	<!-- <button id="songIdEntryButton" class="search" type="button">FIND</button> -->
+	<div class="title"></div>
 	<div class="genre"></div>
 	<div class="description"></div>
-		
+	<img class="img"src="">
 	</div>
 </div>	
 
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
-<script type="text/javascript" src="assets/js/additional.js"></script>
+
 <script type="text/javascript" src="assets/js/main.js"></script>
 <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
 
